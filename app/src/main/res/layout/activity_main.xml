@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/keju"
+        android:layout_width="204dp"
+        android:layout_height="184dp"
+        android:src="@mipmap/ic_kejunich_foreground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/milk"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.7">
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/kasbon"
+        android:layout_width="182dp"
+        android:layout_height="158dp"
+        android:src="@mipmap/ic_antikasbondosa_foreground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.037"
+        app:layout_constraintStart_toStartOf="@+id/keju"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.996">
+
+    </ImageView>
+
+    <Button
+        android:id="@+id/btnroti"
+        android:layout_width="100dp"
+        android:layout_height="74dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="Mau Dong Roti"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.826"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.126" />
+
+    <Button
+        android:id="@+id/btnsusu"
+        android:layout_width="120dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="48dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="Aku Bang Mau Susu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnroti" />
+
+    <ImageView
+        android:id="@+id/milk"
+        android:layout_width="193dp"
+        android:layout_height="191dp"
+        android:layout_marginTop="192dp"
+        android:src="@mipmap/ic_sususapiuhuy_foreground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/bread"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/bread"
+        android:layout_width="187dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@mipmap/ic_rotinihbro_foreground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageView>
+
+    <Button
+        android:id="@+id/btnkeju"
+        android:layout_width="115dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="108dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="Boleh deh keju"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toEndOf="@+id/keju"
+        app:layout_constraintTop_toBottomOf="@+id/btnsusu" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="191dp"
+        android:layout_height="57dp"
+        android:ems="10"
+        android:hint="Mau beli berapa dek ?"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:textColorHint="#BAB6B6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.86" />
+
+    <Button
+        android:id="@+id/pencetbtn"
+        android:layout_width="136dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/purple_200"
+        android:text="Enter cuy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.883"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_name"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
